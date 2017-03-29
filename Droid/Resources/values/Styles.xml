@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <style name="Theme.RainOrShine.Base" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+    <style name="Theme.RainOrShine" parent="Theme.RainOrShine.Base">
+    </style>
+
+	<style name="Theme.RainOrShine.Splash" parent="Theme.RainOrShine">
+		<!-- this will be shown as a splash screen until the first layout is rendered -->
+		<item name="android:windowBackground">@drawable/splash_window_background</item>
+	</style>
+
+	<style name="YellowButtonStyle" parent="Widget.AppCompat.Button.Colored">
+		<item name="colorButtonNormal">#FFC100</item>
+		<!--<item name="android:textColor">@color/White</item>-->
+	</style>
+	
+	<style name="GreyButtonStyle" parent="Widget.AppCompat.Button.Colored">
+		<item name="colorButtonNormal">#e4e4e4</item>
+		<!--<item name="android:textColor">@color/White</item>-->
+	</style>
+</resources>

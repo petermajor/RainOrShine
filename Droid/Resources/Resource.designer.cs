@@ -1791,8 +1791,8 @@ namespace RainOrShine.Droid
 			// aapt resource value: 0x7f07000b
 			public const int MvxBindingTagUnique = 2131165195;
 			
-			// aapt resource value: 0x7f070060
-			public const int action0 = 2131165280;
+			// aapt resource value: 0x7f070063
+			public const int action0 = 2131165283;
 			
 			// aapt resource value: 0x7f070048
 			public const int action_bar = 2131165256;
@@ -1818,8 +1818,8 @@ namespace RainOrShine.Droid
 			// aapt resource value: 0x7f070049
 			public const int action_context_bar = 2131165257;
 			
-			// aapt resource value: 0x7f070064
-			public const int action_divider = 2131165284;
+			// aapt resource value: 0x7f070067
+			public const int action_divider = 2131165287;
 			
 			// aapt resource value: 0x7f070003
 			public const int action_menu_divider = 2131165187;
@@ -1857,20 +1857,23 @@ namespace RainOrShine.Droid
 			// aapt resource value: 0x7f070031
 			public const int buttonPanel = 2131165233;
 			
-			// aapt resource value: 0x7f07005b
-			public const int button_set_default = 2131165275;
-			
 			// aapt resource value: 0x7f07005c
-			public const int button_unset_default = 2131165276;
+			public const int button_set_default = 2131165276;
 			
-			// aapt resource value: 0x7f070061
-			public const int cancel_action = 2131165281;
+			// aapt resource value: 0x7f07005d
+			public const int button_unset_default = 2131165277;
+			
+			// aapt resource value: 0x7f070064
+			public const int cancel_action = 2131165284;
 			
 			// aapt resource value: 0x7f07003f
 			public const int checkbox = 2131165247;
 			
-			// aapt resource value: 0x7f070067
-			public const int chronometer = 2131165287;
+			// aapt resource value: 0x7f07006a
+			public const int chronometer = 2131165290;
+			
+			// aapt resource value: 0x7f07005e
+			public const int city_result_layout = 2131165278;
 			
 			// aapt resource value: 0x7f070021
 			public const int collapseActionView = 2131165217;
@@ -1890,6 +1893,9 @@ namespace RainOrShine.Droid
 			// aapt resource value: 0x7f07002d
 			public const int default_activity_button = 2131165229;
 			
+			// aapt resource value: 0x7f070057
+			public const int detailLayout = 2131165271;
+			
 			// aapt resource value: 0x7f07000f
 			public const int disableHome = 2131165199;
 			
@@ -1899,8 +1905,8 @@ namespace RainOrShine.Droid
 			// aapt resource value: 0x7f07001e
 			public const int end = 2131165214;
 			
-			// aapt resource value: 0x7f07006c
-			public const int end_padder = 2131165292;
+			// aapt resource value: 0x7f07006f
+			public const int end_padder = 2131165295;
 			
 			// aapt resource value: 0x7f07002b
 			public const int expand_activities_button = 2131165227;
@@ -1923,17 +1929,17 @@ namespace RainOrShine.Droid
 			// aapt resource value: 0x7f07002c
 			public const int image = 2131165228;
 			
-			// aapt resource value: 0x7f07006b
-			public const int info = 2131165291;
+			// aapt resource value: 0x7f07006e
+			public const int info = 2131165294;
 			
 			// aapt resource value: 0x7f070000
 			public const int item_touch_helper_previous_elevation = 2131165184;
 			
-			// aapt resource value: 0x7f070065
-			public const int line1 = 2131165285;
+			// aapt resource value: 0x7f070068
+			public const int line1 = 2131165288;
 			
-			// aapt resource value: 0x7f070069
-			public const int line3 = 2131165289;
+			// aapt resource value: 0x7f07006c
+			public const int line3 = 2131165292;
 			
 			// aapt resource value: 0x7f07000c
 			public const int listMode = 2131165196;
@@ -1941,8 +1947,8 @@ namespace RainOrShine.Droid
 			// aapt resource value: 0x7f07002e
 			public const int list_item = 2131165230;
 			
-			// aapt resource value: 0x7f070063
-			public const int media_actions = 2131165283;
+			// aapt resource value: 0x7f070066
+			public const int media_actions = 2131165286;
 			
 			// aapt resource value: 0x7f07001f
 			public const int middle = 2131165215;
@@ -1971,8 +1977,11 @@ namespace RainOrShine.Droid
 			// aapt resource value: 0x7f070041
 			public const int radio = 2131165249;
 			
-			// aapt resource value: 0x7f07005f
-			public const int recyclerView = 2131165279;
+			// aapt resource value: 0x7f070062
+			public const int recyclerView = 2131165282;
+			
+			// aapt resource value: 0x7f070059
+			public const int rightnow = 2131165273;
 			
 			// aapt resource value: 0x7f070018
 			public const int screen = 2131165208;
@@ -1986,11 +1995,11 @@ namespace RainOrShine.Droid
 			// aapt resource value: 0x7f070039
 			public const int scrollView = 2131165241;
 			
-			// aapt resource value: 0x7f07005e
-			public const int search = 2131165278;
+			// aapt resource value: 0x7f070061
+			public const int search = 2131165281;
 			
-			// aapt resource value: 0x7f07005d
-			public const int searchLayout = 2131165277;
+			// aapt resource value: 0x7f070060
+			public const int searchLayout = 2131165280;
 			
 			// aapt resource value: 0x7f07004c
 			public const int search_badge = 2131165260;
@@ -2052,8 +2061,8 @@ namespace RainOrShine.Droid
 			// aapt resource value: 0x7f07001b
 			public const int src_over = 2131165211;
 			
-			// aapt resource value: 0x7f070062
-			public const int status_bar_latest_event_content = 2131165282;
+			// aapt resource value: 0x7f070065
+			public const int status_bar_latest_event_content = 2131165285;
 			
 			// aapt resource value: 0x7f070042
 			public const int submenuarrow = 2131165250;
@@ -2064,29 +2073,29 @@ namespace RainOrShine.Droid
 			// aapt resource value: 0x7f07000e
 			public const int tabMode = 2131165198;
 			
-			// aapt resource value: 0x7f07006a
-			public const int text = 2131165290;
+			// aapt resource value: 0x7f07006d
+			public const int text = 2131165293;
 			
-			// aapt resource value: 0x7f070068
-			public const int text2 = 2131165288;
+			// aapt resource value: 0x7f07006b
+			public const int text2 = 2131165291;
 			
 			// aapt resource value: 0x7f07003a
 			public const int textSpacerNoButtons = 2131165242;
 			
-			// aapt resource value: 0x7f070057
-			public const int theicon = 2131165271;
-			
 			// aapt resource value: 0x7f070058
-			public const int thelocation = 2131165272;
+			public const int theicon = 2131165272;
+			
+			// aapt resource value: 0x7f07005f
+			public const int thelocation = 2131165279;
+			
+			// aapt resource value: 0x7f07005b
+			public const int thetemp = 2131165275;
 			
 			// aapt resource value: 0x7f07005a
-			public const int thetemp = 2131165274;
+			public const int theweather = 2131165274;
 			
-			// aapt resource value: 0x7f070059
-			public const int theweather = 2131165273;
-			
-			// aapt resource value: 0x7f070066
-			public const int time = 2131165286;
+			// aapt resource value: 0x7f070069
+			public const int time = 2131165289;
 			
 			// aapt resource value: 0x7f070030
 			public const int title = 2131165232;

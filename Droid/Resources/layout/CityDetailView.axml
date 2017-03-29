@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/detailLayout"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -16,7 +17,7 @@
             android:layout_marginRight="2dp"
             local:MvxBind="ImageUrl Icon" />
         <TextView
-            android:id="@+id/thelocation"
+            android:id="@+id/rightnow"
             android:layout_marginLeft="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -29,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/theicon"
-            android:layout_below="@+id/thelocation"
+            android:layout_below="@+id/rightnow"
             android:textSize="14dp"
             local:MvxBind="Text Weather" />
         <TextView

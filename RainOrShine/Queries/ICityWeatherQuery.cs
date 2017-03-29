@@ -15,6 +15,19 @@ namespace RainOrShine
 		public Weather[] Weather { get; set; }
 		public Main Main { get; set; }
 		public Sys Sys { get; set; }
+
+		public WeatherResp()
+		{
+		}
+
+		public WeatherResp(int id, string name, string country, string weatherIcon, string weatherDesc, decimal mainTemp)
+		{
+			Id = id;
+			Name = name;
+			Sys = new Sys { Country = country };
+			Weather = new[] { new Weather { Icon = weatherIcon, Description = weatherDesc } };
+			Main = new Main { Temp = mainTemp };
+		}
 	}
 
 	public class Weather

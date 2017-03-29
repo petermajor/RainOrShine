@@ -7,7 +7,7 @@ namespace RainOrShine
 {
 	public class CityDetailViewModel : MvxViewModel<CityDetailViewModel.NavObj>
 	{
-		const bool MetricTrue = true;
+		public bool UseMetric { get; set; } = true;
 
 		public string Location { get; set; }
 
@@ -40,7 +40,7 @@ namespace RainOrShine
 		{
 			_id = parameter.CityId;
 
-			var result = await _weatherQuery.Get(parameter.CityId, MetricTrue);
+			var result = await _weatherQuery.Get(parameter.CityId, UseMetric);
 
 			BindWeather(result);
 		}

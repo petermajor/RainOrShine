@@ -1,5 +1,4 @@
 ﻿using System.IO;
-using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
@@ -7,18 +6,27 @@ namespace RainOrShine
 {
 	public class CityWeatherQuery : ICityWeatherQuery
 	{
-		const string UrlFormatString = "http://api.openweathermap.org/data/2.5/weather?id={0}&units={1}&appid=e28321d706d9d70546427dc0f2942622";
+		const string UrlFormatString = "weather?id={0}&units={1}&appid={2}";
 		const string UnitsMetric = "metric";
 		const string UnitsImperial = "imperial";
 
-		static readonly HttpClient _client = new HttpClient();
 		static readonly JsonSerializer _serializer = new JsonSerializer();
+
+		readonly IHttpClientProvider _clientProvider;
+		readonly IApiKeyProvider _keyProvider;
+
+		public CityWeatherQuery(IHttpClientProvider clientProvider, IApiKeyProvider keyProvider)
+		{
+			_clientProvider = clientProvider;
+			_keyProvider = keyProvider;
+		}
 
 		public async Task<WeatherResp> Get(int id, bool metric)
 		{
-			var url = string.Format(UrlFormatString, id, metric ? UnitsMetric : UnitsImperial);
+			var url = string.Format(UrlFormatString, id, metric ? UnitsMetric : UnitsImperial, _keyProvider.Get());
 
-			var response = await _client.GetAsync(url).ConfigureAwait(false);
+			var client = _clientProvider.Get();
+			var response = await client.GetAsync(url).ConfigureAwait(false);
 			using (response)
 			{
 				response.EnsureSuccessStatusCode();

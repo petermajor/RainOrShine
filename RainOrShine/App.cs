@@ -13,6 +13,8 @@ namespace RainOrShine
 
 			Mvx.RegisterType<ICitySearchQuery, CitySearchQuery>();
 			Mvx.RegisterType<ICityWeatherQuery, CityWeatherQuery>();
+			Mvx.RegisterType<IApiKeyProvider, ApiKeyProvider>();
+			Mvx.RegisterType<IHttpClientProvider, HttpClientProvider>();
 			Mvx.RegisterSingleton<ISettings>(CrossSettings.Current);
 
 			RegisterAppStart<CitySearchViewModel>();

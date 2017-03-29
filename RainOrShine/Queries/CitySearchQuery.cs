@@ -1,5 +1,4 @@
 ﻿using System.IO;
-using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
@@ -7,16 +6,25 @@ namespace RainOrShine
 {
 	public class CitySearchQuery : ICitySearchQuery
 	{
-		const string UrlFormatString = "http://api.openweathermap.org/data/2.5/find?q={0}&type=like&sort=population&cnt=30&appid=e28321d706d9d70546427dc0f2942622";
+		const string UrlFormatString = "find?q={0}&type=like&sort=population&cnt=30&appid={1}";
 
-		static readonly HttpClient _client = new HttpClient();
 		static readonly JsonSerializer _serializer = new JsonSerializer();
+
+		readonly IHttpClientProvider _clientProvider;
+		readonly IApiKeyProvider _keyProvider;
+
+		public CitySearchQuery(IHttpClientProvider clientProvider, IApiKeyProvider keyProvider)
+		{
+			_clientProvider = clientProvider;
+			_keyProvider = keyProvider;
+		}
 
 		public async Task<CitySearchResp> Get(string query)
 		{
-			var url = string.Format(UrlFormatString, query);
+			var url = string.Format(UrlFormatString, query, _keyProvider.Get());
 
-			var response = await _client.GetAsync(url).ConfigureAwait(false);
+			var client = _clientProvider.Get();
+			var response = await client.GetAsync(url).ConfigureAwait(false);
 			using (response)
 			{
 				response.EnsureSuccessStatusCode();

@@ -40,8 +40,9 @@
     <Compile Include="ViewModels\CityListItemViewModel.cs" />
     <Compile Include="ViewModels\CityDetailViewModel.cs" />
     <Compile Include="Converters\BoolReverseValueConverter.cs" />
-    <Compile Include="Helpers\Settings.cs" />
     <Compile Include="Constants.cs" />
+    <Compile Include="Providers\HttpClientProvider.cs" />
+    <Compile Include="Providers\ApiKeyProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Platform">
@@ -74,6 +75,9 @@
     <None Include="FodyWeavers.xml" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Providers\" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Fody.1.29.4\build\portable-net+sl+win+wpa+wp\Fody.targets" Condition="Exists('..\packages\Fody.1.29.4\build\portable-net+sl+win+wpa+wp\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
